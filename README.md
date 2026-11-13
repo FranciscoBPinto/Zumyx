@@ -2,7 +2,7 @@
 
 # Zumyx
 
-### All-in-One Image, Video & Audio Editor
+### Image, Video & Audio Editor
 
 **Create. Enhance. Convert. All in One Place.**
 
