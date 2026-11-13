@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Build output
+build/
+dist/
+*.spec
+
+# Editor and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.log
+
+# Local external binaries and model assets
+ffmpeg.exe
+RealESRGAN/
+Lama/
+u2net/
