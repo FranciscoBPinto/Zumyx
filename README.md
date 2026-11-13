@@ -65,12 +65,6 @@
 
 Whether you're creating content, editing photos, optimizing videos for sharing, or converting media files, Zumyx offers useful tools in one convenient desktop application.
 
-## 🙏 Acknowledgements
-
-Zumyx builds on open-source projects including **Real-ESRGAN**, **rembg**, **LaMa**, **FFmpeg**, and **yt-dlp**. Many thanks to their creators and contributors.
-
-External tools and models may have separate licenses. Review their terms before redistributing them.
-
 ---
 
 <div align="center">
