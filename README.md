@@ -64,11 +64,3 @@
 ## ✨ Why Zumyx?
 
 Whether you're creating content, editing photos, optimizing videos for sharing, or converting media files, Zumyx offers useful tools in one convenient desktop application.
-
----
-
-<div align="center">
-
-**Zumyx — Create. Enhance. Convert. All in One Place.**
-
-</div>
