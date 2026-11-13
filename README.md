@@ -47,16 +47,6 @@
 - Remove audio tracks from videos.
 - Edit audio metadata, including title, artist, album, track, and genre.
 
-## 📸 Screenshots and Demo
-
-Screenshots and demonstration videos can be added here to show the Zumyx interface and its features.
-
-To add a screenshot, upload an image as `assets/zumyx-preview.png` and add this line to the README:
-
-```markdown
-![Zumyx interface](assets/zumyx-preview.png)
-```
-
 ## 🛠️ Technologies
 
 | Technology | Purpose |
@@ -70,50 +60,6 @@ To add a screenshot, upload an image as `assets/zumyx-preview.png` and add this 
 | [FFmpeg](https://ffmpeg.org/) | Video and audio processing |
 | [yt-dlp](https://github.com/yt-dlp/yt-dlp) | Supported media URL downloads |
 | [ONNX Runtime](https://onnxruntime.ai/) | AI model inference |
-
-## 🚀 Running From Source
-
-> The application requires more than Python packages: `theme.py`, FFmpeg, and compatible external AI tools/models are needed for their respective features. The source code and these assets are not yet included in this repository.
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/FranciscoBPinto/Zumyx.git
-cd Zumyx
-```
-
-### 2. Install Python dependencies
-
-Use Python 3.10 or newer, then run:
-
-```bash
-python -m pip install -r requirements.txt
-```
-
-### 3. Provide runtime files
-
-The current Windows source expects a structure similar to:
-
-```text
-Zumyx/
-├── Zumyx.py
-├── theme.py
-├── ffmpeg.exe
-├── RealESRGAN/
-│   ├── realesrgan-ncnn-vulkan.exe
-│   └── models/
-├── Lama/
-│   └── lama_fp32.onnx
-└── u2net/
-```
-
-External binaries and model files should be obtained from their official projects according to their licenses. An optional `logoZumyx.ico` can be added beside the Python script.
-
-### 4. Launch the app
-
-```bash
-python Zumyx.py
-```
 
 ## ✨ Why Zumyx?
 
