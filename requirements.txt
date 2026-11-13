@@ -1,0 +1,7 @@
+PySide6
+Pillow
+numpy
+onnxruntime
+rembg
+requests
+yt-dlp
