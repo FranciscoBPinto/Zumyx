@@ -4,7 +4,6 @@
 
 ### Image, Video & Audio Editor
 
-**Create. Enhance. Convert. All in One Place.**
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)
 ![Platform](https://img.shields.io/badge/Platform-Windows-0078D4?logo=windows&logoColor=white)
