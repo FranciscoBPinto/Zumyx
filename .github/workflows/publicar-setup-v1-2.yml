@@ -1,0 +1,48 @@
+
+name: Publicar Zumyx Setup v1.2
+
+on:
+  schedule:
+    - cron: "00 00 1 12 *"
+      timezone: "Europe/Lisbon"
+
+permissions:
+  contents: write
+
+jobs:
+  publicar-setup:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Verificar e publicar a release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+
+          # Executar apenas na data pretendida
+          if [ "$(TZ=Europe/Lisbon date +%F)" != "2026-12-1" ]; then
+            exit 0
+          fi
+
+          # Confirmar que a release ainda é Draft
+          estado=$(gh release view v1.2 \
+            --repo "$GITHUB_REPOSITORY" \
+            --json isDraft --jq '.isDraft')
+
+          if [ "$estado" != "true" ]; then
+            echo "A release já foi publicada ou não é Draft."
+            exit 0
+          fi
+
+          # Confirmar que o Setup está anexado
+          gh release view v1.2 \
+            --repo "$GITHUB_REPOSITORY" \
+            --json assets --jq '.assets[].name' \
+            | grep -Fxq "Zumyx_Setup.exe"
+
+          # Publicar a v1.2
+          gh release edit v1.2 \
+            --repo "$GITHUB_REPOSITORY" \
+            --draft=false \
+            --latest
