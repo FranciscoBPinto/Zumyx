@@ -1,6 +1,6 @@
 <div align="center">
 
-# Zumyx
+<img src="assets/zumyx.png" alt="Zumyx Media Tools" width="360">
 
 ### Image, Video & Audio Editor
 
